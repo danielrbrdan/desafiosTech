@@ -15,12 +15,12 @@ console.log(somaAteIndice()); // 91
 console.log("\n");
 
 const isFibonacci = (number: number): boolean => {
-  if (number === 0 || number === 1) {
-    return true;
-  }
-
   let prev = 0;
   let current = 1;
+
+  if (number === prev || number === current) {
+    return true;
+  }
 
   while (current <= number) {
     if (current === number) {
